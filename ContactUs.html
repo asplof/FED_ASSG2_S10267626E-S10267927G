@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* Your existing CSS remains the same */
+        
+        .contact-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-group select,
+        .form-group input,
+        .form-group textarea {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background-color: #00a400;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            cursor: pointer;
+            align-self: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #008000;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .footer {
+            background-color: #4a4a4a;
+            padding: 40px 20px;
+            margin-top: 40px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 20px;
+        }
+
+        .footer-section p {
+            line-height: 1.6;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Moke<span class="highlight">Sell</span></div>
+        <div class="nav-links">
+            <a href="#">SHOP</a>
+            <a href="#">SELL</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="login">
+            <a href="#">Login</a>
+            <span class="chat-icon">💬</span>
+        </div>
+    </nav>
+
+    <div class="contact-container">
+        <h1>CONTACT US</h1>
+        <form class="contact-form">
+            <div class="form-group">
+                <label>What can we help you with?</label>
+                <select>
+                    <option value="" selected disabled>Select an option</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="billing">Billing Question</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>What may we address you as?</label>
+                <input type="text" placeholder="Example: Roger Velazquez">
+            </div>
+
+            <div class="form-group">
+                <label>Subject:</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Details:</label>
+                <textarea placeholder="Please write a question or a description of any inquiries you want to let us know"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">SUBMIT</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ABOUT US</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+            <div class="footer-section">
+                <h3>NEED HELP?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+            <div class="footer-section">
+                <h3>CONTACT US</h3>
+                <div class="contact-info">
+                    <p>📍 Yishun ring road 123 S96243</p>
+                    <p>📞 +65 12345678</p>
+                    <p>📧 Mokesell_official@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
