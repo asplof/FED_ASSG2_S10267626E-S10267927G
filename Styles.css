@@ -110,6 +110,24 @@ section {
     margin-bottom: 30px;
 }
 
+.try-button {
+    background: white;
+    color: #ff6b6b;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.try-button:hover {
+    background: #ff8585;
+    color: white;
+}
+
+
 .see-more {
     display: inline-block;
     background: #f0f0f0;
@@ -121,12 +139,18 @@ section {
     transition: all 0.3s ease;
 }
 
+    .see-more:hover {
+        background: #00a400;
+        color: white;
+    }
 .sell-container {
+    display: block flex;
     background: #ff6b6b;
     border-radius: 15px;
     padding: 30px;
     margin-top: 50px;
-    display: flex;
+    width: fit-content;
+    margin: 0 auto;
     align-items: center;
     gap: 30px;
 }
@@ -140,7 +164,8 @@ section {
 
 .sell-content {
     color: white;
-    text-align: left;
+    text-align: center;
+
 }
 
     .sell-content h2 {
@@ -152,19 +177,6 @@ section {
         font-size: 1.2em;
         margin-bottom: 10px;
     }
-
-.try-button {
-    margin-top: 20px;
-    padding: 10px 25px;
-    border: none;
-    border-radius: 25px;
-    background: #f0f0f0;
-    color: #ff6b6b;
-    font-size: 1.2em;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
 
 .why-shop {
     padding: 50px 20px;
