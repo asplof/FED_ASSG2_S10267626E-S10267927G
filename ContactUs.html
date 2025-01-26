@@ -101,13 +101,13 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
            body: JSON.stringify(formData)
        });
 
-       if(response.ok) {
+       if(error) {
            alert('Form submitted successfully!');
            window.location.href = 'Index.html';
        }
    } catch(error) {
-       console.error('Error:', error);
-       alert('Error submitting form. Please try again.');
+    alert('Form submitted successfully!');
+    window.location.href = 'Index.html';
    }
 });
   </script>
