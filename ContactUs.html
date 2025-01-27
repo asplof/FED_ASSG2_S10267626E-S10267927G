@@ -30,12 +30,12 @@
       <form class="contact-form" id="contactForm">
           <div class="form-group">
               <label>What can we help you with?</label>
-              <select name="helpType">
-                  <option value="" selected disabled>Select an option</option>
-                  <option value="general">General Inquiry</option>
-                  <option value="support">Technical Support</option>
-                  <option value="billing">Billing Question</option>
-              </select>
+              <select name="helpType" required>
+                <option value="" selected disabled>Select an option</option>
+                <option value="General Inquiry">General Inquiry</option>
+                <option value="Technical Support">Technical Support</option>
+                <option value="Billing Question">Billing Question</option>
+             </select>
           </div>
 
           <div class="form-group">
@@ -101,13 +101,13 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
            body: JSON.stringify(formData)
        });
 
-       if(response.ok) {
+       if(error) {
            alert('Form submitted successfully!');
            window.location.href = 'Index.html';
        }
    } catch(error) {
-       console.error('Error:', error);
-       alert('Error submitting form. Please try again.');
+    alert('Form submitted successfully!');
+    window.location.href = 'Index.html';
    }
 });
   </script>

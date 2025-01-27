@@ -2,14 +2,14 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #00a400;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .contact-container {
     max-width: 800px;
     margin: 40px auto;
     padding: 30px;
-    background: rgb(199, 199, 199);
+    background: rgb(72, 72, 72);
     border-radius: 15px;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

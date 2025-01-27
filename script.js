@@ -24,5 +24,6 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
         }
     } catch(error) {
         console.error('Error:', error);
-    }
+    }   
  });
+ 
