@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\Styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\Nav.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Nav.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\ContactUs.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ContactUs.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\Index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\ContactUs.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ContactUs.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\Styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\ContactUs.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -53,18 +53,14 @@
               "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Nav.css",
               "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\Nav.css",
               "RelativeDocumentMoniker": "Nav.css",
               "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\Nav.css",
               "RelativeToolTip": "Nav.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-01-26T14:13:50.631Z",
               "EditorCaption": ""
@@ -77,14 +73,13 @@
               "RelativeDocumentMoniker": "ContactUs.css",
               "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\ContactUs.css",
               "RelativeToolTip": "ContactUs.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-26T14:13:06.626Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T14:13:06.626Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ContactUs.html",
               "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\ContactUs.html",
               "RelativeDocumentMoniker": "ContactUs.html",
@@ -109,13 +104,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Styles.css",
               "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\Styles.css",
               "RelativeDocumentMoniker": "Styles.css",
               "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\Styles.css",
               "RelativeToolTip": "Styles.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAeAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-01-24T14:24:05.576Z",
               "EditorCaption": ""
@@ -128,7 +123,7 @@
               "RelativeDocumentMoniker": "Index.html",
               "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\Index.html",
               "RelativeToolTip": "Index.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAtAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGcAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-01-24T14:21:22.809Z",
               "EditorCaption": ""
