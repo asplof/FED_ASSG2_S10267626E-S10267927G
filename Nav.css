@@ -1,0 +1,63 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 10px 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000000;
+}
+
+    .logo .highlight {
+        color: #00a400;
+    }
+
+.logo-link {
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+    .nav-links a {
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;
+        font-size: 1em;
+        transition: color 0.3s ease;
+    }
+
+        .nav-links a:hover {
+            color: #00a400;
+        }
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+    .login a {
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;
+    }
+
+.chat-icon {
+    font-size: 1.2em;
+    cursor: pointer;
+    transform: translateX(5px);
+}
