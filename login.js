@@ -5,18 +5,13 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
     const password = document.getElementById('password').value;
     const errorMessage = document.getElementById('errorMessage');
     
-    // Make error message visible by default
-    errorMessage.style.display = 'block';
-
-    // Show what's being submitted
-    console.log('Attempting login with:', { email, password });
-
     const RESTDB_URL = 'https://contact-43ef.restdb.io/rest/userinfo';
     const RESTDB_API_KEY = '80624ddb6222e495518b2236f2a0413e50465';
 
     try {
-        // First, let's try to get all users to see what's in the database
-        const response = await fetch(RESTDB_URL, {
+        // Query only for the specific user
+        const queryUrl = `${RESTDB_URL}?q={"email":"${email}"}`;
+        const response = await fetch(queryUrl, {
             method: 'GET',
             headers: {
                 'cache-control': 'no-cache',
@@ -26,29 +21,21 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
         });
 
         const data = await response.json();
-        console.log('All users in database:', data);
-
-        // Now check if there's a matching user
-        const matchingUser = data.find(user => 
-            user.email === email && user.password === password
-        );
-
-        if (matchingUser) {
-            console.log('Login successful!');
+        
+        // Check if user exists and password matches
+        const user = data[0];
+        if (user && user.password === password) {
             errorMessage.textContent = 'Login successful! Redirecting...';
             errorMessage.style.color = 'green';
             localStorage.setItem('userEmail', email);
-            setTimeout(() => {
-                window.location.href = 'index.html';
-            }, 2000);
+            window.location.href = 'index.html';
         } else {
-            console.log('No matching user found');
             errorMessage.textContent = 'Invalid email or password';
             errorMessage.style.color = 'red';
         }
     } catch (error) {
-        console.error('Detailed error:', error);
-        errorMessage.textContent = 'Error: ' + error.message;
+        console.error('Login error:', error);
+        errorMessage.textContent = 'Connection error: ' + error.message;
         errorMessage.style.color = 'red';
     }
 });
