@@ -19,7 +19,7 @@
             <h2 class="login-title">Log in</h2>
             <form id="loginForm">
                 <div class="form-group">
-                    <input type="text" id="username" placeholder="Username / email" required>
+                    <input type="text" id="username" placeholder="Email" required>
                 </div>
                 <div class="form-group">
                     <input type="password" id="password" placeholder="Password" required>
@@ -48,61 +48,56 @@
                 <p>Mokesell_official@gmail.com</p>
             </div>
         </div>
-        <div class="social-icons">
-            <img src="/api/placeholder/24/24" alt="Facebook">
-            <img src="/api/placeholder/24/24" alt="Twitter">
-            <img src="/api/placeholder/24/24" alt="Instagram">
-            <img src="/api/placeholder/24/24" alt="YouTube">
-        </div>
     </footer>
 
+    <!-- Add the JavaScript just before closing body tag -->
     <script>
         document.getElementById('loginForm').addEventListener('submit', async (e) => {
             e.preventDefault();
-
+            
             const email = document.getElementById('username').value;
             const password = document.getElementById('password').value;
             const errorMessage = document.getElementById('errorMessage');
-
-            // RestDB credentials
+            
             const RESTDB_URL = 'https://contact-43ef.restdb.io/rest/userinfo';
-            const RESTDB_API_KEY = '80624ddb6222e495518b2236f2a0413e50465';
+            const RESTDB_API_KEY = '67983df8f9d2bb2a64181e5b';
 
             try {
-                // Query the database to find a matching user
-                const response = await fetch(`${RESTDB_URL}?q={"email":"${email}","password":"${password}"}`, {
+                const queryUrl = `${RESTDB_URL}?q={"email":"${email}"}`;
+                const response = await fetch(queryUrl, {
                     method: 'GET',
                     headers: {
                         'cache-control': 'no-cache',
                         'x-apikey': RESTDB_API_KEY,
-                        'content-type': 'application/json'
+                        'content-type': 'application/json',
+                        'Access-Control-Allow-Origin': '*'
                     }
                 });
 
-                const data = await response.json();
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
 
-                if (data && data.length > 0) {
-                    // Successful login - user found
-                    console.log('Login successful');
-                    // Store user session
+                const data = await response.json();
+                
+                // Check if user exists and password matches
+                const user = data[0];
+                if (user && user.password === password) {
+                    errorMessage.textContent = 'Login successful! Redirecting...';
+                    errorMessage.style.color = 'green';
                     localStorage.setItem('userEmail', email);
-                    // Redirect to index page
                     window.location.href = 'index.html';
                 } else {
-                    // No matching user found
-                    errorMessage.style.display = 'block';
                     errorMessage.textContent = 'Invalid email or password';
+                    errorMessage.style.color = 'red';
                 }
             } catch (error) {
-                errorMessage.style.display = 'block';
-                errorMessage.textContent = 'An error occurred. Please try again.';
                 console.error('Login error:', error);
+                errorMessage.textContent = 'Connection error: ' + error.message;
+                errorMessage.style.color = 'red';
             }
         });
-
     </script>
-
     <script src="login.js"></script>
-    <script src="auth.js"></script>
 </body>
 </html>
