@@ -26,7 +26,7 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
             if (user && user.password === password) {
                 errorMessage.textContent = 'Login successful! Redirecting...';
                 errorMessage.style.color = 'green';
-                localStorage.setItem('userEmail', email);
+                AuthChecker.login(email);
                 window.location.href = 'index.html';
             } else {
                 errorMessage.textContent = 'Invalid email or password';

@@ -27,3 +27,10 @@ const AuthChecker = {
 document.addEventListener('DOMContentLoaded', () => {
     AuthChecker.requireAuth();
 });
+
+// for logout
+if (document.getElementById('logoutButton')) {
+    document.getElementById('logoutButton').addEventListener('click', () => {
+        AuthChecker.logout();
+    });
+}
