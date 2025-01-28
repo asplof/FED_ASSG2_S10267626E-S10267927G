@@ -35,6 +35,7 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
         } else {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
+
     } catch (error) {
         console.error('Login error:', error);
         errorMessage.textContent = 'Connection error: ' + error.message;
