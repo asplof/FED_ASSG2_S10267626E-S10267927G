@@ -6,10 +6,9 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
     const errorMessage = document.getElementById('errorMessage');
     
     const RESTDB_URL = 'https://contact-43ef.restdb.io/rest/userinfo';
-    const RESTDB_API_KEY = '80624ddb6222e495518b2236f2a0413e50465';
+    const RESTDB_API_KEY = '67983df8f9d2bb2a64181e5b';
 
     try {
-        // Query only for the specific user
         const queryUrl = `${RESTDB_URL}?q={"email":"${email}"}`;
         const response = await fetch(queryUrl, {
             method: 'GET',
@@ -20,18 +19,21 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
             }
         });
 
-        const data = await response.json();
-        
-        // Check if user exists and password matches
-        const user = data[0];
-        if (user && user.password === password) {
-            errorMessage.textContent = 'Login successful! Redirecting...';
-            errorMessage.style.color = 'green';
-            localStorage.setItem('userEmail', email);
-            window.location.href = 'index.html';
+        if (response.ok) {
+            const data = await response.json();
+            const user = data[0];
+            
+            if (user && user.password === password) {
+                errorMessage.textContent = 'Login successful! Redirecting...';
+                errorMessage.style.color = 'green';
+                localStorage.setItem('userEmail', email);
+                window.location.href = 'index.html';
+            } else {
+                errorMessage.textContent = 'Invalid email or password';
+                errorMessage.style.color = 'red';
+            }
         } else {
-            errorMessage.textContent = 'Invalid email or password';
-            errorMessage.style.color = 'red';
+            throw new Error(`HTTP error! status: ${response.status}`);
         }
     } catch (error) {
         console.error('Login error:', error);
