@@ -79,8 +79,19 @@
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-01-26T14:13:50.631Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
@@ -105,20 +116,7 @@
               "RelativeToolTip": "Login.html",
               "ViewState": "AQIAAFEAAAAAAAAAAAAAAGgAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-01-28T02:07:27.824Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "WhenOpened": "2025-01-28T02:07:27.824Z"
             },
             {
               "$type": "Document",
@@ -130,8 +128,7 @@
               "RelativeToolTip": "Sell.html",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-01-27T07:28:01.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T07:28:01.994Z"
             },
             {
               "$type": "Document",
@@ -141,7 +138,7 @@
               "RelativeDocumentMoniker": "login.css",
               "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\login.css",
               "RelativeToolTip": "login.css",
-              "ViewState": "AQIAAFMAAAAAAAAAAADwv1oAAAAeAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAFoAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-01-28T02:07:25.763Z",
               "EditorCaption": ""
@@ -156,8 +153,7 @@
               "RelativeToolTip": "Sell.css",
               "ViewState": "AQIAAHwAAAAAAAAAAAAAwJsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-27T07:28:31.185Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T07:28:31.185Z"
             },
             {
               "$type": "Document",
@@ -169,8 +165,7 @@
               "RelativeToolTip": "Index.html",
               "ViewState": "AQIAAHIAAAAAAAAAAAAAABIAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-01-24T14:21:22.809Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-24T14:21:22.809Z"
             },
             {
               "$type": "Document",
@@ -182,8 +177,7 @@
               "RelativeToolTip": "Styles.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAMwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-24T14:24:05.576Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-24T14:24:05.576Z"
             },
             {
               "$type": "Document",
@@ -207,8 +201,7 @@
               "RelativeToolTip": "auth.js",
               "ViewState": "AQIAAA8AAAAAAAAAAAAAABwAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-28T02:13:58.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-28T02:13:58.042Z"
             },
             {
               "$type": "Document",
