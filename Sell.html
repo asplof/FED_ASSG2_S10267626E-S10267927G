@@ -6,7 +6,96 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="Sell.css">
+    <script>
+        AuthChecker.requireAuth();
+    </script>
 </head>
 <body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="Index.html" class="logo" style="text-decoration: none; color: inherit;">
+                Moke<span class="logo-green">Sell</span>
+            </a>
+            <div class="nav-icons">
+                <img src="" alt="Profile" class="icon-image">
+                <img src="" alt="Chat" class="icon-image">
+            </div>
+        </div>
+    </nav>
+    <main class="main-content">
+        <div class="search-section">
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" class="search-input" placeholder="What do you want to buy?">
+                    <img src="" alt="Search" class="search-icon">
+                </div>
+            </div>
+        </div>
+        <div class="products-section">
+            <div class="products-container">
+                <div class="products-title">Top Products</div>
+                <div class="product-buttons">
+                    <button class="product-button">Bicycle</button>
+                    <button class="product-button">Coffee table</button>
+                    <button class="product-button">Toiletries</button>
+                    <button class="product-button">Plants</button>
+                </div>
+            </div>
+        </div>
+        <div class="listings-container">
+            <div class="listings-scroll">
+                <div class="listing-card">
+                    <div class="listing-image"></div>
+                    <div class="listing-content">
+                        <h3 class="listing-title">2020 Toyota Camry SE</h3>
+                        <div class="listing-price">$18,500</div>
+                        <div class="listing-meta">San Francisco • 2d ago</div>
+                    </div>
+                </div>
+                <div class="listing-card">
+                    <div class="listing-image"></div>
+                    <div class="listing-content">
+                        <h3 class="listing-title">iPhone 13 Pro - 256GB</h3>
+                        <div class="listing-price">$799</div>
+                        <div class="listing-meta">New York • Just now</div>
+                    </div>
+                </div>
+                <div class="listing-card">
+                    <div class="listing-image"></div>
+                    <div class="listing-content">
+                        <h3 class="listing-title">Modern Sofa Set</h3>
+                        <div class="listing-price">$1,200</div>
+                        <div class="listing-meta">Chicago • 1w ago</div>
+                    </div>
+                </div>
+                <div class="listing-card">
+                    <div class="listing-image"></div>
+                    <div class="listing-content">
+                        <h3 class="listing-title">Mountain Bike</h3>
+                        <div class="listing-price">$450</div>
+                        <div class="listing-meta">Seattle • 3d ago</div>
+                    </div>
+                </div>
+                <div class="listing-card">
+                    <div class="listing-image"></div>
+                    <div class="listing-content">
+                        <h3 class="listing-title">Gaming Laptop</h3>
+                        <div class="listing-price">$1,499</div>
+                        <div class="listing-meta">Boston • 5d ago</div>
+                    </div>
+                </div>
+                <div class="listing-card">
+                    <div class="listing-image"></div>
+                    <div class="listing-content">
+                        <h3 class="listing-title">Vintage Watch</h3>
+                        <div class="listing-price">$299</div>
+                        <div class="listing-meta">Miami • 1d ago</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="auth.js"></script>
+
 </body>
 </html>

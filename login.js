@@ -4,7 +4,7 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
     const email = document.getElementById('username').value;
     const password = document.getElementById('password').value;
     const errorMessage = document.getElementById('errorMessage');
-    
+
     const RESTDB_URL = 'https://contact-43ef.restdb.io/rest/userinfo';
     const RESTDB_API_KEY = '80624ddb6222e495518b2236f2a0413e50465';
 

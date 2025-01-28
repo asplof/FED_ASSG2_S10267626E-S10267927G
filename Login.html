@@ -59,7 +59,7 @@
     <script>
         document.getElementById('loginForm').addEventListener('submit', async (e) => {
             e.preventDefault();
-            
+
             const email = document.getElementById('username').value;
             const password = document.getElementById('password').value;
             const errorMessage = document.getElementById('errorMessage');
@@ -99,8 +99,9 @@
                 console.error('Login error:', error);
             }
         });
-        
+
     </script>
     <script src="login.js"></script>
+    <script src="auth.js"></script>
 </body>
 </html>
