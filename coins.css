@@ -1,0 +1,134 @@
+.rewards-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+
+.profile-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.profile-avatar {
+    width: 60px;
+    height: 60px;
+    background: #00a824;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+    .profile-avatar span {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+.profile-info h2 {
+    margin: 0;
+    color: #333;
+}
+
+.profile-info .email {
+    color: #666;
+    margin: 0.25rem 0 0 0;
+}
+
+.coins-display {
+    background: #f8f9fa;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.coins-amount {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.coin-icon {
+    font-size: 1.5rem;
+}
+
+.label {
+    font-size: 1rem;
+    color: #666;
+}
+
+.section-title {
+    margin: 2rem 0 1rem;
+    color: #333;
+}
+
+.vouchers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.voucher-card {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.voucher-content h3 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+}
+
+.voucher-content p {
+    color: #666;
+    margin: 0 0 1rem 0;
+}
+
+.voucher-price {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #00a824;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.redeem-btn {
+    background: #00a824;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+    .redeem-btn:hover {
+        background: #008c1e;
+    }
+
+    .redeem-btn.disabled {
+        background: #ccc;
+        cursor: not-allowed;
+    }
+
