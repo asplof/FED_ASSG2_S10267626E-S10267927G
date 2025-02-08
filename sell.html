@@ -1,13 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Sell.css">
-    <script>
-        AuthChecker.requireAuth();
-    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="sell.css">
 </head>
 <body>
+    <div class="contact-container">
+        <h1>List Your Items Now!</h1>
+        <form class="contact-form" id="sellForm">
+            <div class="form-group">
+                <label>What item do you want to sell?</label>
+                <select name="category" required>
+                    <option value="" selected disabled>Category of your item</option>
+                    <option value="Fashion">Fashion</option>
+                    <option value="Gaming">Gaming</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Lifestyle">Lifestyle</option>
+                    <option value="Learning">Learning</option>
+                    <option value="Cars">Cars</option>
+                    <option value="Mobile Devices">Mobile Devices</option>
+                </select>
+            </div>
 
-<script src="auth.js"></script>
+            <div class="form-group">
+                <label>Condition of the item?</label>
+                <select name="condition" required>
+                    <option value="" selected disabled>Condition of your item</option>
+                    <option value="Brand New">Brand New</option>
+                    <option value="Like New">Like New</option>
+                    <option value="Used">Used</option>
+                    <option value="Well Used">Well Used</option>
+                    <option value="Broken">Broken</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Title of your listing</label>
+                <input type="text" name="title" required>
+            </div>
+
+            <div class="form-group">
+                <label>Upload image of your item</label>
+                <input type="file" name="image" accept="image/*" required>
+                <div class="image-preview"></div>
+            </div>
+
+            <div class="form-group">
+                <label>Price</label>
+                <input type="text" name="price" placeholder="Set your intended price" required>
+            </div>
+
+            <div class="form-group">
+                <label>Details:</label>
+                <textarea name="details" placeholder="Please write a description of the item you want to list" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">SUBMIT</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ABOUT US</h3>
+                <p>Find the best deals on pre-loved items and list your own items for sale on MokeSell.</p>
+            </div>
+            <div class="footer-section">
+                <h3>NEED HELP?</h3>
+                <p>Our support team is here to help you with any questions about buying or selling items.</p>
+            </div>
+            <div class="footer-section">
+                <h3>CONTACT US</h3>
+                <div class="contact-info">
+                    <p>📍 Yishun ring road 123 S96243</p>
+                    <p>📞 +65 12345678</p>
+                    <p>📧 Mokesell_official@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Handle form submission
+        document.getElementById('sellForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            console.log('Form submission started');
+
+            try {
+                // Basic validation
+                const category = document.querySelector('select[name="category"]').value;
+                const condition = document.querySelector('select[name="condition"]').value;
+                const title = document.querySelector('input[name="title"]').value;
+                const price = document.querySelector('input[name="price"]').value;
+                const details = document.querySelector('textarea[name="details"]').value;
+                const imageFile = document.querySelector('input[name="image"]').files[0];
+
+                if (!category || !condition || !title || !price || !details || !imageFile) {
+                    alert('Please fill in all fields');
+                    return;
+                }
+
+                // Show loading state
+                const submitBtn = document.querySelector('.submit-btn');
+                submitBtn.textContent = 'Submitting...';
+                submitBtn.disabled = true;
+
+                // Convert image to base64
+                const base64Image = await new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    reader.onload = () => resolve(reader.result);
+                    reader.onerror = reject;
+                    reader.readAsDataURL(imageFile);
+                });
+
+                // Prepare the data
+                const formData = {
+                    listingtype: category,
+                    listingcondition: condition,
+                    listingname: title,
+                    listingimage: base64Image,
+                    listingprice: price.replace(/[$,]/g, ''),
+                    listingdescription: details
+                };
+
+                console.log('Sending data to RestDB...');
+
+                // Send to RestDB with CORS mode
+                const response = await fetch('https://listing-1f1b.restdb.io/rest/listing', {
+                    method: 'POST',
+                    mode: 'cors', // Enable CORS
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'x-apikey': '65a4f92868d49d4d08f594cd',
+                        'Cache-Control': 'no-cache',
+                        'Access-Control-Allow-Origin': '*'
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                console.log('Response received:', response);
+
+                if (response.ok) {
+                    const result = await response.json();
+                    console.log('Success:', result);
+                    alert('Listing submitted successfully!');
+                    window.location.href = 'index.html';
+                } else {
+                    const errorText = await response.text();
+                    console.error('Server error:', errorText);
+                    throw new Error('Server response was not OK');
+                }
+
+            } catch (error) {
+                console.error('Submission error:', error);
+                alert('Error submitting listing. Please try again.');
+            } finally {
+                const submitBtn = document.querySelector('.submit-btn');
+                submitBtn.textContent = 'SUBMIT';
+                submitBtn.disabled = false;
+            }
+        });
+
+        // Image preview
+        document.querySelector('input[name="image"]').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const preview = document.querySelector('.image-preview');
+                    preview.innerHTML = `
+                        <img src="${e.target.result}" style="max-width: 200px; max-height: 200px; object-fit: contain;">
+                        <div style="margin-top: 5px;">${file.name}</div>
+                    `;
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Price formatting
+        document.querySelector('input[name="price"]').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/[^\d.]/g, '');
+            if (value) {
+                const number = parseFloat(value);
+                if (!isNaN(number)) {
+                    e.target.value = '$' + number.toFixed(2);
+                }
+            }
+        });
+    </script>
 </body>
+</html>
