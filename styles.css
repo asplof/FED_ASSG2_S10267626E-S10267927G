@@ -93,13 +93,17 @@ figure {
 
 .slots-icon {
     background-color: white;
-    width: 50px;
+    width: 120px;
     border-radius: 10px;
     text-align: center;
-    padding: 3px;
+    padding: 5px;
     margin: 0 auto;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
 }
+
+    .slots-icon p {
+        text-decoration:underline;
+    }
 
 section {
     background-color: aliceblue;
@@ -112,6 +116,80 @@ section {
         color: black;
         margin-bottom: 30px;
     }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+    .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.3s ease-in-out;
+    }
+
+    .card:hover img {
+        filter: brightness(50%);
+    }
+
+    .card .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .card:hover .overlay {
+        opacity: 1;
+    }
+
+.overlay h2 {
+    margin: 0;
+    color: white;
+    font-size: 18px;
+    text-decoration:underline;
+}
+
+.overlay p {
+    margin: 5px 5px;
+}
+
+.overlay h5 {
+    text-decoration: none;
+    color: #00a400;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 .product-container {
     display: flex;
