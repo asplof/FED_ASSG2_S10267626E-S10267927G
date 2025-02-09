@@ -2,6 +2,7 @@ body{
     background-color:aliceblue;
 }
 
+/*nav bar*/
 .nav {
     position: fixed;
     top: 0;
@@ -32,6 +33,7 @@ body{
     color: #00a400;
 }
 
+/*icons*/
 .nav-icons {
     display: flex;
     gap: 1rem;
@@ -46,14 +48,14 @@ body{
     cursor: pointer;
 }
 
-
+/*rewards*/
 .rewards-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
 }
 
-
+/*Display profile*/
 .profile-card {
     background: white;
     border-radius: 1rem;
@@ -95,6 +97,7 @@ body{
     margin: 0.25rem 0 0 0;
 }
 
+/*coins*/
 .coins-display {
     background: #f8f9fa;
     border-radius: 0.75rem;
@@ -126,6 +129,7 @@ body{
     color: #333;
 }
 
+/*Vouchers*/
 .vouchers-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

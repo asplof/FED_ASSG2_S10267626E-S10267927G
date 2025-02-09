@@ -1,4 +1,8 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -60,4 +64,94 @@
     font-size: 1.2em;
     cursor: pointer;
     transform: translateX(5px);
+}
+@media (max-width: 768px) {
+    /* Stack logo, login, and chat icon in one row */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Logo section centered */
+    .logo {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+    }
+
+    /* Login and chat icon row */
+    .login {
+        margin-top: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    /* Align chat icon to the right */
+    .chat-icon {
+        margin-left: auto;
+    }
+
+    .nav-links {
+        width:100%;
+        border-radius: 20px;
+        background-color: #00a400;
+        padding: inherit;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+        /* Ensure the nav links are centered on mobile */
+        .nav-links a {
+            font-size: 1.1em;
+            text-align: center;
+            width: 100%;
+        }
+
+            .nav-links a:hover {
+                color: white;
+            }
+}
+/*extra info at the end*/
+.footer {
+    border-radius: 7px;
+    background: rgb(52, 52, 52);
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    /*to make it horizontal*/
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr; /* Stack the sections vertically */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+        /* space between sections */
+    }
 }

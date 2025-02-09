@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-
+/*navigation bar*/
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -35,7 +35,6 @@
 
 .nav-links {
     display: flex;
-    gap: 40px;
 }
 
     .nav-links a {
@@ -68,12 +67,14 @@
     transform: translateX(5px);
 }
 
+/*overall webpage*/
 body {
     font-family: Arial, sans-serif;
     background-color: #00a400;
     color: #ffffff;
 }
 
+/*main info*/
 figure {
     display: flex;
     flex-direction: row;
@@ -91,7 +92,13 @@ figure {
         height: auto;
         margin-right: 30px;
     }
-
+@media (max-width: 768px) {
+    figure {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*icon for coins*/
 .slots-icon {
     background-color: white;
     width: 120px;
@@ -106,7 +113,7 @@ figure {
         text-decoration: underline;
         color: #00a400;
     }
-
+/*rest of the webpage*/
 section {
     background-color: aliceblue;
     padding: 20px;
@@ -119,6 +126,7 @@ section {
         margin-bottom: 30px;
     }
 
+/*cards to display some of our catogories*/
 .container {
     display: flex;
     flex-direction: row;
@@ -186,14 +194,14 @@ section {
     font-size: 20px;
 }
 
+/* at a certain width change to column to fit window size*/
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
         align-items: center;
     }
 }
-
-.product-container {
+.sell-container {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -212,13 +220,19 @@ section {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 .try-button:hover {
     background: #ff8585;
     color: white;
 }
 
-
+/* see more button*/
 .see-more {
     display: inline-block;
     background: #f0f0f0;
@@ -234,6 +248,8 @@ section {
         background: #00a400;
         color: white;
     }
+
+/*card that promotes our sell feature*/
 .sell-container {
     display: block flex;
     background: #ff6b6b;
@@ -279,6 +295,7 @@ section {
         margin-bottom: 40px;
     }
 
+/* the 3 cards stating our benefits*/
 .features {
     display: flex;
     justify-content: center;
@@ -304,55 +321,12 @@ section {
     .feature-card p {
         color: black;
     }
-
-.product-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
+/*at a certain width it will go vertically*/
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-.product {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    width: 250px;
-}
 
-    .product img {
-        width: 200px;
-        height: 200px;
-        margin-bottom: 15px;
-    }
-
-    .product h3 {
-        color: black;
-        margin-bottom: 10px;
-    }
-
-    .product .price {
-        color: #00a400;
-        font-weight: bold;
-        font-size: 1.2em;
-        margin-bottom: 15px;
-    }
-
-    .product button {
-        background: #00a400;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background 0.3s ease;
-        font-weight: bold;
-        font-size: 1.1em;
-    }
-
-        .product button:hover {
-            background: #008000;
-        }
