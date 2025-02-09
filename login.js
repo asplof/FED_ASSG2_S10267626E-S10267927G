@@ -1,6 +1,6 @@
 document.getElementById('loginForm').addEventListener('submit', async (e) => {
     e.preventDefault();
-    
+
     const email = document.getElementById('username').value;
     const password = document.getElementById('password').value;
     const errorMessage = document.getElementById('errorMessage');
@@ -12,7 +12,6 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
         const queryUrl = `${RESTDB_URL}?q={"email":"${email}"}`;
         const response = await fetch(queryUrl, {
             method: 'GET',
-            mode: 'no-cors',  // Changed this line
             headers: {
                 'cache-control': 'no-cache',
                 'x-apikey': RESTDB_API_KEY,
@@ -20,13 +19,22 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
             }
         });
 
-        if (response.type === 'opaque') {  // no-cors returns opaque response
-            // Since we can't read the response with no-cors, we'll assume success
-            // This isn't ideal but might work as a temporary solution
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        
+        // Check if user exists and password matches
+        const user = data[0];
+        if (user && user.password === password) {
+            errorMessage.textContent = 'Login successful! Redirecting...';
+            errorMessage.style.color = 'green';
             localStorage.setItem('userEmail', email);
             window.location.href = 'index.html';
         } else {
-            throw new Error('Login failed');
+            errorMessage.textContent = 'Invalid email or password';
+            errorMessage.style.color = 'red';
         }
     } catch (error) {
         console.error('Login error:', error);
