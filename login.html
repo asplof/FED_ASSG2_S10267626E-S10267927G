@@ -4,101 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MokeSell - Login</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="Nav.css">
-    <link rel="stylesheet" href="ContactUs.css">
     <link rel="stylesheet" href="login.css">    
 </head>
 <body>
-    <header class="header">
-        <a href="index.html" class="logo"><span class="logo-moke">Moke</span><span class="logo-sell">Sell</span></a>
-    </header>
-
-    <main class="main-content">
-        <div class="login-container">
-            <h2 class="login-title">Log in</h2>
-            <form id="loginForm">
-                <div class="form-group">
-                    <input type="text" id="username" placeholder="Email" required>
-                </div>
-                <div class="form-group">
-                    <input type="password" id="password" placeholder="Password" required>
-                </div>
-                <a href="#" class="forgot-password">Forgot password?</a>
-                <button type="submit" class="login-button">Log In</button>
-                <div id="errorMessage" class="error-message"></div>
-            </form>
-        </div>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>ABOUT US</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    <div class="login-container">
+        <h1>Login to MokeSell</h1>
+        <p class="welcome-text">Welcome back! Please enter your details.</p>
+        
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Email</label>
+                <input type="email" id="username" required>
             </div>
-            <div class="footer-section">
-                <h3>NEED HELP?</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            </div>
-            <div class="footer-section">
-                <h3>CONTACT US</h3>
-                <p>Yishun ring road 123 349243</p>
-                <p>+65 12345678</p>
-                <p>Mokesell_official@gmail.com</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        document.getElementById('loginForm').addEventListener('submit', async (e) => {
-            e.preventDefault();
-
-            const email = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-            const errorMessage = document.getElementById('errorMessage');
             
-            const RESTDB_URL = 'https://contact-43ef.restdb.io/rest/userinfo';
-            const RESTDB_API_KEY = '67984e85f9d2bb298d181e5c';
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+            </div>
+            
+            <div class="form-options">
+                <label class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <span>Remember me</span>
+                </label>
+                <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
 
-            try {
-                const queryUrl = `${RESTDB_URL}?q={"email":"${email}"}`;
-                const response = await fetch(queryUrl, {
-                    method: 'GET',
-                    headers: {
-                        'cache-control': 'no-cache',
-                        'x-apikey': RESTDB_API_KEY,
-                        'content-type': 'application/json',
-                        'Access-Control-Allow-Origin': '*'
-                    }
-                });
+            <button type="submit" class="sign-in-button">Sign in</button>
+            
+            <div id="errorMessage" class="error-message"></div>
+        </form>
 
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
+        <div class="divider">
+            <span>New to MokeSell?</span>
+        </div>
 
-                const data = await response.json();
-                
-                // Check if user exists and password matches
-                const user = data[0];
-                if (user && user.password === password) {
-                    errorMessage.textContent = 'Login successful! Redirecting...';
-                    errorMessage.style.color = 'green';
-                    localStorage.setItem('userEmail', email);
-                    window.location.href = 'index.html';
-                } else {
-                    errorMessage.textContent = 'Invalid email or password';
-                    errorMessage.style.color = 'red';
-                }
-            } catch (error) {
-                console.error('Login error:', error);
-                errorMessage.textContent = 'Connection error: ' + error.message;
-                errorMessage.style.color = 'red';
-            }
-        });
-    </script>
-
+        <a href="signup.html" class="create-account-button">Create an account</a>
+    </div>
     <script src="login.js"></script>
-    <script src="auth.js"></script>
 </body>
 </html>
