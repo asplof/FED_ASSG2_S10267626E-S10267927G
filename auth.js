@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     AuthChecker.requireAuth();
 });
 
-// for logout
+// for logout (if we end up having)
 if (document.getElementById('logoutButton')) {
     document.getElementById('logoutButton').addEventListener('click', () => {
         AuthChecker.logout();

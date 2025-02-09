@@ -5,7 +5,7 @@ body {
     color: rgb(255, 255, 255);
 }
 
-/*Survey container*/
+/* Survey container */
 .contact-container {
     max-width: 800px;
     margin: 40px auto;
@@ -27,7 +27,7 @@ body {
     gap: 20px;
 }
 
-/*all the text boxes*/
+/* all the text boxes */
 .form-group {
     display: flex;
     flex-direction: column;
@@ -53,6 +53,7 @@ textarea {
     resize: vertical;
 }
 
+/* Submit button */
 .submit-btn {
     width: auto;
     padding: 14px 45px;

@@ -72,6 +72,7 @@ label {
     font-weight: 500;
 }
 
+/* formatting the input boxes */
 input[type="email"],
 input[type="password"] {
     width: 100%;
@@ -89,6 +90,7 @@ input[type="password"] {
     margin-bottom: 24px;
 }
 
+/* Checkbox */
 .remember-me {
     display: flex;
     align-items: center;
@@ -119,6 +121,7 @@ input[type="password"] {
     background-color: #008f00;
 }
 
+/* a line between New to Mokesell?*/
 .divider {
     position: relative;
     text-align: center;

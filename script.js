@@ -1,13 +1,13 @@
 document.getElementById('contactForm').addEventListener('submit', async (e) => {
     e.preventDefault();
-    
+    /* format for the type of data */
     const formData = {
         helpType: document.querySelector('select').value,
         name: document.querySelector('input[placeholder="Example: Roger Velazquez"]').value,
         subject: document.querySelector('input[type="text"]:not([placeholder])').value,
         details: document.querySelector('textarea').value
     };
- 
+    
     try {
         const response = await fetch('https://contact-43ef.restdb.io/rest/contactus', {
             method: 'POST',

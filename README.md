@@ -29,8 +29,9 @@ In addition, you may also use this section to discuss plans for additional featu
 
 Features Left to Implement
 Feature 4 - allows buyers to communicate with sellers by using a chat feature
+Feature 5 - make th coins function work such that when buying a listing you are given coins and it us updated in the database
 Another feature idea
-Feature 5 - allows buyers to promote certain sellers by giving them reviews
+Feature 6 - allows buyers to promote certain sellers by giving them reviews
 
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 HTML
@@ -42,7 +43,11 @@ The project uses JS for running login checks, api, and perform certain tasks bac
 Assistive AI
 In this section you should document the process of using AI tools eg, ChatGPT, Gemini etc to help you with the development of features/functionalities of your web application. (Failure to document your use of AI tools will result in loss of marks.) Example below:
 we used AI to 
-get icons like our coins and chat icon
+	- get the icons like our coins and chat icon
+	- the ripple effect animation for a button
+	- media query for Contact us
+	- 
+	- 
 
 
 Testing

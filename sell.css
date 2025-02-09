@@ -95,7 +95,6 @@ body {
         width: 100%;
     }
 
-    /* Align to the right */
     .chat-icon {
         margin-left: auto;
     }
@@ -165,14 +164,13 @@ body {
     align-items: center;
 }
 
-/* Form Group - Keep everything wide but padded */
 .form-group {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    max-width: 720px; /* Almost full width but with space from container edges */
-    padding: 0 20px; /* Adds breathing room inside container */
+    max-width: 720px; 
+    padding: 0 20px;
 }
 
     /* Label styling */
@@ -189,7 +187,7 @@ body {
     .form-group input,
     .form-group textarea,
     .form-group input[type="file"] {
-        width: 100%; /* Full width inside the form-group */
+        width: 100%; 
         padding: 14px;
         border: 1px solid #ccc;
         border-radius: 6px;
@@ -209,12 +207,12 @@ body {
             box-shadow: 0 0 5px rgba(0, 164, 0, 0.5);
         }
 
-/* File Input */
+
 input[type="file"] {
     cursor: pointer;
 }
 
-/* Image Preview */
+
 .image-preview {
     width: 100%;
     min-height: 100px;
@@ -227,7 +225,7 @@ input[type="file"] {
     color: gray;
 }
 
-/* Submit Button */
+
 .submit-btn {
     width: auto;
     padding: 14px 45px;
@@ -247,7 +245,7 @@ input[type="file"] {
         transform: scale(1.05);
     }
 
-/* Footer */
+/* Extra info */
 .footer {
     background: #343434;
     padding: 40px 0;
@@ -275,7 +273,7 @@ input[type="file"] {
     font-size: 14px;
 }
 
-/* Responsive Design */
+/* makes it so that its in a column */
 @media (max-width: 768px) {
     .contact-container {
         padding: 25px;
@@ -284,7 +282,7 @@ input[type="file"] {
 
     .form-group {
         max-width: 100%;
-        padding: 0; /* Removes extra padding on smaller screens */
+        padding: 0;
     }
 
     .footer-content {
