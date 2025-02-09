@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MokeSell - List Your Items</title>
     <link rel="stylesheet" href="sell.css">
 </head>
 <body>
@@ -23,12 +23,13 @@
             <span class="chat-icon">💬</span>
         </div>
     </header>
+
     <div class="contact-container">
         <h1>List Your Items Now!</h1>
         <form class="contact-form" id="sellForm">
             <div class="form-group">
-                <label>What item do you want to sell?</label>
-                <select name="category" required>
+                <label for="category">What item do you want to sell?</label>
+                <select id="category" required>
                     <option value="" selected disabled>Category of your item</option>
                     <option value="Fashion">Fashion</option>
                     <option value="Gaming">Gaming</option>
@@ -41,8 +42,8 @@
             </div>
 
             <div class="form-group">
-                <label>Condition of the item?</label>
-                <select name="condition" required>
+                <label for="condition">Condition of the item?</label>
+                <select id="condition" required>
                     <option value="" selected disabled>Condition of your item</option>
                     <option value="Brand New">Brand New</option>
                     <option value="Like New">Like New</option>
@@ -53,25 +54,24 @@
             </div>
 
             <div class="form-group">
-                <label>Title of your listing</label>
-                <input type="text" name="title" required>
+                <label for="title">Title of your listing</label>
+                <input type="text" id="title" required>
             </div>
 
             <div class="form-group">
-                <label>Upload image of your item</label>
-                <input type="file" name="image" accept="image/*" required>
-                <br>
-                <div class="image-preview"></div>
+                <label for="image">Upload image of your item</label>
+                <input type="file" id="image" accept="image/*" required>
+                <div id="imagePreview" class="image-preview"></div>
             </div>
 
             <div class="form-group">
-                <label>Price</label>
-                <input type="text" name="price" placeholder="Set your intended price" required>
+                <label for="price">Price</label>
+                <input type="text" id="price" placeholder="Set your intended price" required>
             </div>
 
             <div class="form-group">
-                <label>Details:</label>
-                <textarea name="details" placeholder="Please write a description of the item you want to list" required></textarea>
+                <label for="details">Details:</label>
+                <textarea id="details" placeholder="Please write a description of the item you want to list" required></textarea>
             </div>
 
             <button type="submit" class="submit-btn">Submit Listing</button>
@@ -99,130 +99,6 @@
         </div>
     </footer>
 
-    <script>
-        // Handle form submission
-        document.getElementById('sellForm').addEventListener('submit', async function (e) {
-            e.preventDefault();
-            console.log('Form submission started');
-
-            try {
-                // Basic validation
-                const category = document.querySelector('select[name="category"]').value;
-                const condition = document.querySelector('select[name="condition"]').value;
-                const title = document.querySelector('input[name="title"]').value;
-                const price = document.querySelector('input[name="price"]').value;
-                const details = document.querySelector('textarea[name="details"]').value;
-                const imageFile = document.querySelector('input[name="image"]').files[0];
-
-                if (!category || !condition || !title || !price || !details || !imageFile) {
-                    alert('Please fill in all fields');
-                    return;
-                }
-
-                // Show loading state
-                const submitBtn = document.querySelector('.submit-btn');
-                submitBtn.textContent = 'Submitting...';
-                submitBtn.disabled = true;
-
-                // Convert image to base64
-                const base64Image = await new Promise((resolve, reject) => {
-                    const reader = new FileReader();
-                    reader.onload = () => resolve(reader.result);
-                    reader.onerror = reject;
-                    reader.readAsDataURL(imageFile);
-                });
-
-                // Prepare the data
-                const formData = {
-                    listingtype: category,
-                    listingcondition: condition,
-                    listingname: title,
-                    listingimage: base64Image,
-                    listingprice: price.replace(/[$,]/g, ''),
-                    listingdescription: details
-                };
-
-                console.log('Sending data to RestDB...');
-
-                // Send to RestDB with CORS mode
-                const response = await fetch('https://listing-1f1b.restdb.io/rest/listing', {
-                    method: 'POST',
-                    mode: 'cors', // Enable CORS
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'x-apikey': '65a4f92868d49d4d08f594cd',
-                        'Cache-Control': 'no-cache',
-                        'Access-Control-Allow-Origin': '*'
-                    },
-                    body: JSON.stringify(formData)
-                });
-
-                console.log('Response received:', response);
-
-                if (response.ok) {
-                    const result = await response.json();
-                    console.log('Success:', result);
-                    alert('Listing submitted successfully!');
-                    window.location.href = 'index.html';
-                } else {
-                    const errorText = await response.text();
-                    console.error('Server error:', errorText);
-                    throw new Error('Server response was not OK');
-                }
-
-            } catch (error) {
-                console.error('Submission error:', error);
-                alert('Error submitting listing. Please try again.');
-            } finally {
-                const submitBtn = document.querySelector('.submit-btn');
-                submitBtn.textContent = 'SUBMIT';
-                submitBtn.disabled = false;
-            }
-        });
-
-        // Image preview
-        document.querySelector('input[name="image"]').addEventListener('change', function (e) {
-            const file = e.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function (e) {
-                    const preview = document.querySelector('.image-preview');
-                    preview.innerHTML = `
-                                <img src="${e.target.result}" style="max-width: 200px; max-height: 200px; object-fit: contain;">
-                                <div style="margin-top: 5px;">${file.name}</div>
-                            `;
-                }
-                reader.readAsDataURL(file);
-            }
-        });
-
-        // Price formatting
-        document.querySelector('input[name="price"]').addEventListener('input', function (e) {
-            let value = e.target.value.replace(/[^\d.]/g, '');
-            if (value) {
-                const number = parseFloat(value);
-                if (!isNaN(number)) {
-                    e.target.value = '$' + number.toFixed(2);
-                }
-            }
-        });
-    </script>
-    <script src="auth.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Check if user is logged in
-            if (!AuthChecker.isLoggedIn()) {
-                window.location.href = 'login.html'; // Redirect to login if not authenticated
-            } else {
-                // Display user's email
-                document.getElementById('userEmail').textContent = AuthChecker.getCurrentUser();
-            }
-        });
-
-        // Logout button event listener
-        document.getElementById('logoutButton').addEventListener('click', () => {
-            AuthChecker.logout(); // Calls the logout function in auth.js
-        });
-    </script>
+    <script src="sell.js"></script>
 </body>
 </html>

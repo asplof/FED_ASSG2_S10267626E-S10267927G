@@ -12,7 +12,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 99;
-    background-color: #9CA3AF;
+    background-color: #595d65;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     padding: 10px 20px;
     border-radius: 8px;
@@ -145,7 +145,7 @@ body {
         background: #fff;
         color: black;
         transition: border 0.3s ease;
-        box-sizing: border-box; /* Ensures padding doesn’t break alignment */
+        box-sizing: border-box; /* Ensures padding doesnï¿½t break alignment */
     }
 
         /* Focus effect */

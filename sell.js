@@ -30,96 +30,75 @@ document.getElementById('sellForm').addEventListener('submit', async function(e)
     e.preventDefault();
     console.log('Form submission started');
 
-    // Get form data
-    const formData = {
-        category: document.getElementById('category').value,
-        condition: document.getElementById('condition').value,
-        title: document.getElementById('title').value,
-        price: document.getElementById('price').value.replace(/[$,]/g, ''),
-        details: document.getElementById('details').value
-    };
-
-    // Validate form
-    if (!validateForm(formData)) {
-        return;
-    }
-
-    // Show loading state
-    const submitButton = document.querySelector('.submit-btn');
-    submitButton.disabled = true;
-    submitButton.textContent = 'Submitting...';
-
     try {
-        // Handle image
+        // Get form values
+        const category = document.getElementById('category').value;
+        const condition = document.getElementById('condition').value;
+        const title = document.getElementById('title').value;
+        const price = document.getElementById('price').value.replace(/[$,]/g, '');
+        const details = document.getElementById('details').value;
         const imageFile = document.getElementById('image').files[0];
-        const base64Image = await convertImageToBase64(imageFile);
 
-        // Prepare data for RestDB
-        const listingData = {
-            listingname: formData.title,
-            listingdescription: formData.details,
+        // Validate
+        if (!category || !condition || !title || !price || !details || !imageFile) {
+            alert('Please fill in all fields');
+            return;
+        }
+
+        // Show loading state
+        const submitBtn = document.querySelector('.submit-btn');
+        submitBtn.textContent = 'Submitting...';
+        submitBtn.disabled = true;
+
+        // Convert image to base64
+        const base64Image = await new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.onload = () => resolve(reader.result);
+            reader.onerror = reject;
+            reader.readAsDataURL(imageFile);
+        });
+
+        // Prepare the data
+        const formData = {
+            listingtype: category,
+            listingcondition: condition,
+            listingname: title,
             listingimage: base64Image,
-            listingcat: formData.category,
-            listingprice: formData.price,
-            listingcondition: formData.condition,
+            listingprice: price,
+            listingdescription: details,
             created: new Date().toISOString()
         };
 
         // Send to RestDB
-        const response = await fetch('https://contact-43ef.restdb.io/rest/listings', {
+        const response = await fetch('https://contact-43ef.restdb.io/rest/listing?max=2', {
             method: 'POST',
+            mode: 'cors', // Enable CORS
             headers: {
                 'Content-Type': 'application/json',
                 'x-apikey': '80624ddb6222e495518b2236f2a0413e50465',
-                'Cache-Control': 'no-cache'
+                'Cache-Control': 'no-cache',
+                'Access-Control-Allow-Origin': '*'
             },
-            body: JSON.stringify(listingData)
+            body: JSON.stringify(formData)
         });
 
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
-        const result = await response.json();
-        
-        if (result && result._id) {
-            alert('Your listing has been submitted successfully!');
+        if (response.ok) {
+            const result = await response.json();
+            console.log('Success:', result);
+            alert('Listing submitted successfully!');
             window.location.href = 'index.html';
         } else {
-            throw new Error('Failed to get confirmation from database');
+            const errorText = await response.text();
+            console.error('Server error:', errorText);
+            throw new Error('Server response was not OK');
         }
+
     } catch (error) {
-        console.error('Error:', error);
-        alert('There was an error submitting your listing. Please try again.');
+        console.error('Submission error:', error);
+        alert('Error submitting listing. Please try again.');
     } finally {
-        submitButton.disabled = false;
-        submitButton.textContent = 'SUBMIT';
+        const submitBtn = document.querySelector('.submit-btn');
+        submitBtn.textContent = 'Submit Listing';
+        submitBtn.disabled = false;
     }
 });
-
-// Helper functions
-function validateForm(formData) {
-    const errors = [];
-
-    if (!formData.category) errors.push('Please select a category');
-    if (!formData.condition) errors.push('Please select item condition');
-    if (!formData.title.trim()) errors.push('Please enter a title');
-    if (!formData.price.trim()) errors.push('Please enter a price');
-    if (!formData.details.trim()) errors.push('Please enter item details');
-    if (!document.getElementById('image').files[0]) errors.push('Please upload an image');
-
-    if (errors.length > 0) {
-        alert(errors.join('\n'));
-        return false;
-    }
-    return true;
-}
-
-function convertImageToBase64(file) {
-    return new Promise((resolve, reject) => {
-        const reader = new FileReader();
-        reader.onload = () => resolve(reader.result);
-        reader.onerror = () => reject(new Error('Failed to read file'));
-        reader.readAsDataURL(file);
-    });
-}
