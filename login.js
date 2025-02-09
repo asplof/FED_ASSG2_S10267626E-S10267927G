@@ -11,7 +11,7 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
     try {
         const queryUrl = `${RESTDB_URL}?q={"email":"${email}"}`;
         
-        // First try with credentials included
+        
         const response = await fetch(queryUrl, {
             method: 'GET',
             headers: {
@@ -22,7 +22,7 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
             mode: 'cors',
             credentials: 'include'
         }).catch(async () => {
-            // If that fails, retry with no-cors as fallback
+            // If cors error
             return await fetch(queryUrl, {
                 method: 'GET',
                 headers: {
