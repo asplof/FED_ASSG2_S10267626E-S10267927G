@@ -75,7 +75,7 @@ document.getElementById('sellForm').addEventListener('submit', async function(e)
             mode: 'cors', // Enable CORS
             headers: {
                 'Content-Type': 'application/json',
-                'x-apikey': '80624ddb6222e495518b2236f2a0413e50465',
+                'x-apikey': '67984e85f9d2bb298d181e5c',
                 'Cache-Control': 'no-cache',
                 'Access-Control-Allow-Origin': '*'
             },
