@@ -166,3 +166,21 @@ input[type="password"] {
     margin-top: 8px;
     font-size: 14px;
 }
+
+/* Login hiding */
+.login-container {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+/* Initially, the loading animation is hidden */
+.loading-animation {
+    display: none;
+    text-align: center;
+}

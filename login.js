@@ -66,3 +66,26 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
         errorMessage.style.color = 'red';
     }
 });
+
+document.getElementById("loginForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const loginContainer = document.querySelector(".login-container");
+
+    // Hide all content inside login-container
+    loginContainer.innerHTML = `
+        <dotlottie-player 
+            src="https://lottie.host/b8c29b35-807c-4cf1-bd23-50429d67a63f/zK4ITpy4nM.lottie"
+            background="transparent" 
+            speed="1" 
+            style="width: 300px; height: 300px; margin: auto;"
+            loop 
+            autoplay>
+        </dotlottie-player>
+    `;
+
+    // Wait 3 seconds, then redirect to index.html
+    setTimeout(() => {
+        window.location.href = "index.html";
+    }, 3000);
+});
