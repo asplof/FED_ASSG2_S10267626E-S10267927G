@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MokeSell - Login</title>
-    <link rel="stylesheet" href="login.css">    
+    <link rel="stylesheet" href="login.css">
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 </head>
 <body>
     <nav class="nav">
@@ -14,39 +15,53 @@
             </a>
         </div>
     </nav>
+
     <div class="login-container">
-        <h1>Login to MokeSell</h1>
-        <p class="welcome-text">Welcome back! Please enter your details.</p>
+        <!-- This wrapper is needed to hide content dynamically -->
+        <div class="login-content">
+            <h1>Login to MokeSell</h1>
+            <p class="welcome-text">Welcome back! Please enter your details.</p>
 
-        <form id="loginForm">
-            <div class="form-group">
-                <label for="username">Email</label>
-                <input type="email" id="username" required>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Email</label>
+                    <input type="email" id="username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="sign-in-button">Sign in</button>
+
+                <div id="errorMessage" class="error-message"></div>
+            </form>
+
+            <div class="divider">
+                <span>New to MokeSell?</span>
             </div>
 
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" required>
-            </div>
-
-            <div class="form-options">
-                <label class="remember-me">
-                    <input type="checkbox" id="remember">
-                    <span>Remember me</span>
-                </label>
-                <a href="#" class="forgot-password">Forgot password?</a>
-            </div>
-
-            <button type="submit" class="sign-in-button">Sign in</button>
-
-            <div id="errorMessage" class="error-message"></div>
-        </form>
-
-        <div class="divider">
-            <span>New to MokeSell?</span>
+            <a href="signup.html" class="create-account-button">Create an account</a>
         </div>
 
-        <a href="signup.html" class="create-account-button">Create an account</a>
+        <div class="loading-animation">
+            <dotlottie-player src="https://lottie.host/b8c29b35-807c-4cf1-bd23-50429d67a63f/zK4ITpy4nM.lottie"
+                              background="transparent"
+                              speed="1"
+                              style="width: 300px; height: 300px;"
+                              loop
+                              autoplay>
+            </dotlottie-player>
+        </div>
     </div>
     <script src="login.js"></script>
 </body>

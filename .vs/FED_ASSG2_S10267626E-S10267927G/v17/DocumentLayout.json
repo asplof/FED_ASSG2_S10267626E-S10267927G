@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\ContactUs.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ContactUs.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\sell.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:sell.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\Chat.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Chat.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\Login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\sell.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -27,14 +47,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:nav.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\Login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\coins.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:coins.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -43,24 +55,16 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\ContactUs.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ContactUs.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\Source\\Repos\\FED_ASSG2_S10267626E-S10267927G\\contactUs.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contactUs.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\shop.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:shop.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\coins.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:coins.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:login.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\shop.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -109,18 +113,138 @@
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Chat.html",
+              "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\Chat.html",
+              "RelativeDocumentMoniker": "Chat.html",
+              "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\Chat.html",
+              "RelativeToolTip": "Chat.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-02-09T14:06:00.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "styles.css",
+              "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\styles.css",
+              "RelativeDocumentMoniker": "styles.css",
+              "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\styles.css",
+              "RelativeToolTip": "styles.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-24T14:24:05.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-28T02:49:24.104Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "sell.html",
+              "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\sell.html",
+              "RelativeDocumentMoniker": "sell.html",
+              "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\sell.html",
+              "RelativeToolTip": "sell.html",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-02-04T07:39:13.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "nav.css",
+              "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\nav.css",
+              "RelativeDocumentMoniker": "nav.css",
+              "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\nav.css",
+              "RelativeToolTip": "nav.css",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAAABIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-26T14:13:50.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "script.js",
+              "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\script.js",
+              "RelativeDocumentMoniker": "script.js",
+              "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\script.js",
+              "RelativeToolTip": "script.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-26T09:06:02.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "sell.css",
+              "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\sell.css",
+              "RelativeDocumentMoniker": "sell.css",
+              "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\sell.css",
+              "RelativeToolTip": "sell.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-09T04:47:09.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADAAAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-01-24T14:18:40.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "contactUs.css",
+              "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\contactUs.css",
+              "RelativeDocumentMoniker": "contactUs.css",
+              "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\contactUs.css",
+              "RelativeToolTip": "contactUs.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-26T14:13:06.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "login.css",
+              "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\login.css",
+              "RelativeDocumentMoniker": "login.css",
+              "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\login.css",
+              "RelativeToolTip": "login.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAALMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-01-28T02:07:25.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ContactUs.html",
               "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\ContactUs.html",
               "RelativeDocumentMoniker": "ContactUs.html",
               "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\ContactUs.html",
               "RelativeToolTip": "ContactUs.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAHAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-01-26T14:04:09.096Z",
               "EditorCaption": ""
@@ -133,14 +257,25 @@
               "RelativeDocumentMoniker": "login.html",
               "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\login.html",
               "RelativeToolTip": "login.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAOAAAA",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAwwEAAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-01-28T02:07:27.824Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-28T02:07:27.824Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
+              "Title": "login.js",
+              "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\login.js",
+              "RelativeDocumentMoniker": "login.js",
+              "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\login.js",
+              "RelativeToolTip": "login.js",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAwwEYAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-28T02:07:29.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "coins.html",
               "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\coins.html",
               "RelativeDocumentMoniker": "coins.html",
@@ -148,116 +283,11 @@
               "RelativeToolTip": "coins.html",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-04T08:18:36.01Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T08:18:36.01Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "styles.css",
-              "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\styles.css",
-              "RelativeDocumentMoniker": "styles.css",
-              "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\styles.css",
-              "RelativeToolTip": "styles.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-24T14:24:05.576Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\index.html",
-              "RelativeDocumentMoniker": "index.html",
-              "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\index.html",
-              "RelativeToolTip": "index.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-01-28T02:49:24.104Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "sell.html",
-              "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\sell.html",
-              "RelativeDocumentMoniker": "sell.html",
-              "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\sell.html",
-              "RelativeToolTip": "sell.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-04T07:39:13.265Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "nav.css",
-              "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\nav.css",
-              "RelativeDocumentMoniker": "nav.css",
-              "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\nav.css",
-              "RelativeToolTip": "nav.css",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAAABIAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-26T14:13:50.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "script.js",
-              "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\script.js",
-              "RelativeDocumentMoniker": "script.js",
-              "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\script.js",
-              "RelativeToolTip": "script.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-26T09:06:02.504Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "sell.css",
-              "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\sell.css",
-              "RelativeDocumentMoniker": "sell.css",
-              "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\sell.css",
-              "RelativeToolTip": "sell.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-09T04:47:09.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "README.md",
-              "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\README.md",
-              "RelativeDocumentMoniker": "README.md",
-              "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\README.md",
-              "RelativeToolTip": "README.md",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAACwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-01-24T14:18:40.425Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "contactUs.css",
-              "DocumentMoniker": "C:\\Users\\sarav\\Source\\Repos\\FED_ASSG2_S10267626E-S10267927G\\contactUs.css",
-              "RelativeDocumentMoniker": "contactUs.css",
-              "ToolTip": "C:\\Users\\sarav\\Source\\Repos\\FED_ASSG2_S10267626E-S10267927G\\contactUs.css",
-              "RelativeToolTip": "contactUs.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-26T14:13:06.626Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "shop.css",
               "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\shop.css",
               "RelativeDocumentMoniker": "shop.css",
@@ -265,37 +295,11 @@
               "RelativeToolTip": "shop.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAHQAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-27T07:28:31.185Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-27T07:28:31.185Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "login.css",
-              "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\login.css",
-              "RelativeDocumentMoniker": "login.css",
-              "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\login.css",
-              "RelativeToolTip": "login.css",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-28T02:07:25.763Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "login.js",
-              "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\login.js",
-              "RelativeDocumentMoniker": "login.js",
-              "ToolTip": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\login.js",
-              "RelativeToolTip": "login.js",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-28T02:07:29.196Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "coins.css",
               "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\coins.css",
               "RelativeDocumentMoniker": "coins.css",
@@ -307,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "auth.js",
               "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\auth.js",
               "RelativeDocumentMoniker": "auth.js",
@@ -319,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "shop.html",
               "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\shop.html",
               "RelativeDocumentMoniker": "shop.html",
@@ -331,7 +335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "shop.js",
               "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\shop.js",
               "RelativeDocumentMoniker": "shop.js",
@@ -343,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "coins.js",
               "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\coins.js",
               "RelativeDocumentMoniker": "coins.js",
@@ -355,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "ShoppingCartWithMoney.png -  [English (United States)] - PNG [499x500, 32 bit, PNG]",
               "DocumentMoniker": "C:\\Users\\sarav\\source\\repos\\FED_ASSG2_S10267626E-S10267927G\\ShoppingCartWithMoney.png",
               "RelativeDocumentMoniker": "ShoppingCartWithMoney.png",
