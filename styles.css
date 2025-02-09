@@ -110,7 +110,7 @@ figure {
 }
 
     .slots-icon p {
-        text-decoration: underline;
+        text-decoration: none;
         color: #00a400;
     }
 /*rest of the webpage*/
@@ -208,7 +208,7 @@ section {
     flex-wrap: wrap;
     margin-bottom: 30px;
 }
-
+/*try it out button*/
 .try-button {
     background: white;
     color: #ff6b6b;
@@ -218,8 +218,38 @@ section {
     font-size: 1.2em;
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s ease, color 0.3s ease;
 }
+
+    .try-button:hover {
+        background: #ff8585;
+        color: white;
+    }
+
+    /* Ripple animation on hover */
+    .try-button::before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        transform: scale(0);
+        opacity: 0;
+        transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    .try-button:hover::before {
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 1;
+    }
+
+
 @media (max-width: 768px) {
     .product-container {
         flex-direction: column;
@@ -227,27 +257,47 @@ section {
     }
 }
 
-.try-button:hover {
-    background: #ff8585;
-    color: white;
-}
 
 /* see more button*/
 .see-more {
     display: inline-block;
-    background: #f0f0f0;
-    color: #00a400;
+    background: #00a400;
+    color: white;
     padding: 10px 25px;
     border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
-    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
     .see-more:hover {
-        background: #00a400;
-        color: white;
+        background: #f0f0f0;
+        color: #00a400;
     }
+
+    /* Ripple animation on hover */
+    .see-more::before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: rgba(0, 164, 0, 0.3);
+        border-radius: 50%;
+        transform: scale(0);
+        opacity: 0;
+        transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+    }
+
+    .see-more:hover::before {
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 1;
+    }
+
 
 /*card that promotes our sell feature*/
 .sell-container {
