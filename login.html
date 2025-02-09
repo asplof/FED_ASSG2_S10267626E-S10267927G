@@ -7,21 +7,28 @@
     <link rel="stylesheet" href="login.css">    
 </head>
 <body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">
+                Moke<span class="logo-green">Sell</span>
+            </a>
+        </div>
+    </nav>
     <div class="login-container">
         <h1>Login to MokeSell</h1>
         <p class="welcome-text">Welcome back! Please enter your details.</p>
-        
+
         <form id="loginForm">
             <div class="form-group">
                 <label for="username">Email</label>
                 <input type="email" id="username" required>
             </div>
-            
+
             <div class="form-group">
                 <label for="password">Password</label>
                 <input type="password" id="password" required>
             </div>
-            
+
             <div class="form-options">
                 <label class="remember-me">
                     <input type="checkbox" id="remember">
@@ -31,7 +38,7 @@
             </div>
 
             <button type="submit" class="sign-in-button">Sign in</button>
-            
+
             <div id="errorMessage" class="error-message"></div>
         </form>
 
