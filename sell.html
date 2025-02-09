@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MokeSell - List Your Items</title>
     <link rel="stylesheet" href="sell.css">
+    <script src="auth.js"></script>
+    <script>
+        AuthChecker.requireAuth();
+    </script>
 </head>
 <body>
     <header class="navbar">
@@ -98,10 +102,6 @@
             </div>
         </div>
     </footer>
-    <script src="auth.js"></script>
-    <script>
-        AuthChecker.requireAuth();
-    </script>
     <script src="sell.js"></script>
 </body>
 </html>
