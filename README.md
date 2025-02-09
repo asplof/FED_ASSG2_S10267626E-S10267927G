@@ -24,16 +24,19 @@ Existing Features
 Feature 1 - allows users to provide feedback by having them fill out a contact us form
 Feature 2 - allows users to log in and keep their details by having them fill out a log in page
 Feature 3 - allows users to create a listing for others to see and buy by having fill out a create a listing page
+Feature 4 - allows users to sign up for a new account
+Feature 5 allows user to filter listings in shop page
 ...
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+
 
 Features Left to Implement
 Feature 4 - allows buyers to communicate with sellers by using a chat feature
 Feature 5 - make th coins function work such that when buying a listing you are given coins and it us updated in the database
 Another feature idea
 Feature 6 - allows buyers to promote certain sellers by giving them reviews
+Feature 7 - fix listing form
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+Tools used for the project:
 HTML
 The project uses HTML as a base model for the website
 CSS
@@ -58,11 +61,12 @@ Go to the "Contact Us" page
 Try to submit the empty form and verify that an error message about the required fields appears
 Try to submit the form with an invalid email address and verify that a relevant error message appears
 Try to submit the form with all inputs valid and verify that a success message appears.
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+Sign Up form:
+If user does not provide any of the key information user cannot go pass
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+Listing form:
+If user does not provide all necesarry info to their listing user will not list
 
 <b>Credits</b>
 Content
