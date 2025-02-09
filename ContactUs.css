@@ -52,22 +52,23 @@ textarea {
 }
 
 .submit-btn {
-    width: fit-content;
-    margin: 20px auto;
-    padding: 12px 40px;
+    width: auto;
+    padding: 14px 45px;
     background: white;
     color: #00a400;
     border: none;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
+    margin-top: 10px;
 }
 
     .submit-btn:hover {
         background: #008000;
         color: white;
+        transform: scale(1.05);
     }
 
 .footer {

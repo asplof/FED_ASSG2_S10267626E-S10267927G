@@ -83,6 +83,7 @@ figure {
 
     figure h1 {
         font-size: 80px;
+        text-align:center
     }
 
     figure img {
@@ -102,7 +103,8 @@ figure {
 }
 
     .slots-icon p {
-        text-decoration:underline;
+        text-decoration: underline;
+        color: #00a400;
     }
 
 section {

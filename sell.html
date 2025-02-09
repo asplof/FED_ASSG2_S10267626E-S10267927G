@@ -4,11 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="sell.css">
 </head>
 <body>
+    <header class="navbar">
+        <a href="index.html" class="logo-link">
+            <div class="logo">
+                <span class="brand-name">Moke<span class="highlight">Sell</span></span>
+            </div>
+        </a>
+        <nav class="nav-links">
+            <a href="shop.html">SHOP</a>
+            <a href="sell.html">SELL</a>
+            <a href="ContactUs.html">CONTACT US</a>
+        </nav>
+        <div class="login">
+            <a href="login.html">Login</a>
+            <span class="chat-icon">💬</span>
+        </div>
+    </header>
     <div class="contact-container">
         <h1>List Your Items Now!</h1>
         <form class="contact-form" id="sellForm">
@@ -46,6 +60,7 @@
             <div class="form-group">
                 <label>Upload image of your item</label>
                 <input type="file" name="image" accept="image/*" required>
+                <br>
                 <div class="image-preview"></div>
             </div>
 
@@ -59,7 +74,7 @@
                 <textarea name="details" placeholder="Please write a description of the item you want to list" required></textarea>
             </div>
 
-            <button type="submit" class="submit-btn">SUBMIT</button>
+            <button type="submit" class="submit-btn">Submit Listing</button>
         </form>
     </div>
 
@@ -86,7 +101,7 @@
 
     <script>
         // Handle form submission
-        document.getElementById('sellForm').addEventListener('submit', async function(e) {
+        document.getElementById('sellForm').addEventListener('submit', async function (e) {
             e.preventDefault();
             console.log('Form submission started');
 
@@ -166,23 +181,23 @@
         });
 
         // Image preview
-        document.querySelector('input[name="image"]').addEventListener('change', function(e) {
+        document.querySelector('input[name="image"]').addEventListener('change', function (e) {
             const file = e.target.files[0];
             if (file) {
                 const reader = new FileReader();
-                reader.onload = function(e) {
+                reader.onload = function (e) {
                     const preview = document.querySelector('.image-preview');
                     preview.innerHTML = `
-                        <img src="${e.target.result}" style="max-width: 200px; max-height: 200px; object-fit: contain;">
-                        <div style="margin-top: 5px;">${file.name}</div>
-                    `;
+                                <img src="${e.target.result}" style="max-width: 200px; max-height: 200px; object-fit: contain;">
+                                <div style="margin-top: 5px;">${file.name}</div>
+                            `;
                 }
                 reader.readAsDataURL(file);
             }
         });
 
         // Price formatting
-        document.querySelector('input[name="price"]').addEventListener('input', function(e) {
+        document.querySelector('input[name="price"]').addEventListener('input', function (e) {
             let value = e.target.value.replace(/[^\d.]/g, '');
             if (value) {
                 const number = parseFloat(value);
@@ -190,6 +205,23 @@
                     e.target.value = '$' + number.toFixed(2);
                 }
             }
+        });
+    </script>
+    <script src="auth.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check if user is logged in
+            if (!AuthChecker.isLoggedIn()) {
+                window.location.href = 'login.html'; // Redirect to login if not authenticated
+            } else {
+                // Display user's email
+                document.getElementById('userEmail').textContent = AuthChecker.getCurrentUser();
+            }
+        });
+
+        // Logout button event listener
+        document.getElementById('logoutButton').addEventListener('click', () => {
+            AuthChecker.logout(); // Calls the logout function in auth.js
         });
     </script>
 </body>
